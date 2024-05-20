@@ -11,7 +11,9 @@ app.use(express.static(path.join(__dirname, '../public')));
 
 app.get("/",function (req,res)
 {
-    console.log("Hello welcome to geocode");
+    res.json({
+        msg: "Welcome to geoCode"
+    })
 })
 
 
