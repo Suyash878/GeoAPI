@@ -32,7 +32,7 @@ app.get("/geocode", async function (req,res)
     }
     catch(err)
     {
-        console.error("Error fetching the geoCode", error);
+        console.error("Error fetching the geoCode", err);
         res.status(500).json({
             error: "Internal Server error"
         });
